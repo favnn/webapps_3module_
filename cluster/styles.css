@@ -1,0 +1,175 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif
+  }
+
+  html {
+    height: 100vh;
+  }
+  body, .content {
+    height: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    align-items: start;
+    padding: 36px;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 8px;
+    padding: 0;
+  }
+  /* стили для плоскости */
+  #plot {
+    width: 750px;
+    height: 750px;
+    border: 2px solid #424242;
+    position: relative;
+  }
+
+  /* стили для кнопок и поля ввода */
+  #controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+  button { 
+    background-color: #4E87F5; /* цвет кнопки */
+    border: none; /* убираем границы кнопки */
+    color: white; /* цвет текста кнопки */
+    padding: 10px 20px; /* отступы кнопки */
+    text-align: center; /* текст по центру кнопки */
+    text-decoration: none; /* убираем подчеркивание текста */
+    display: inline-block; /* строчно-блочное отображение кнопки */
+    font-size: 17px; /* размер шрифта текста кнопки */
+    margin: 4px 2px; /* внешний отступ кнопки */
+    cursor: pointer; /* курсор при наведении на кнопку */
+    border-radius: 4px; /* углы кнопки */
+  }
+
+  button:hover {
+    background-color: #71A7F5; /* цвет кнопки при наведении */
+  }
+  
+  input[type="number"] {
+    padding: 8px; /* отступы поля ввода */
+    border: none; /* убираем границу поля ввода */
+    border-radius: 4px; /* углы поля ввода */
+    box-shadow: 0 0 0 2px #5c7cdd; /* тень вокруг поля ввода */
+    margin: 4px; /* внешний отступ поля ввода */
+    width: 100%;
+  }
+
+  .container {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  /* Medium devices (tablets) */
+  @media only screen and (max-width: 767px) {
+    /* максимальная ширина экрана */
+    .main {
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #plot {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  /* Medium devices (tablets) */
+  @media only screen and (max-width: 567px) {
+    /* максимальная ширина экрана */
+    .main {
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    #plot {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button {
+  width: 100%;
+}
+
+  /* Medium devices (tablets) */
+  @media only screen and (max-width: 567px) {
+
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    #plot {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 1199px) {
+    #plot {
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 1199px) {
+    #plot {
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .main {
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+    }
+    #plot {
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    #plot {
+      margin: auto;
+      width: 400px;
+      height: 400px;
+    }
+  }

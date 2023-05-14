@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+.container {
+    margin: auto;
+}
+
+/* Extra small devices (portrait phones) */
+@media only screen and (max-width: 575px) {
+    /* максимальная ширина экрана */
+    .container {
+      max-width: 100%;
+    }
+  }
+  
+  /* Small devices (landscape phones) */
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* максимальная ширина экрана */
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* максимальная ширина экрана */
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* максимальная ширина экрана */
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  /* Extra large devices (large desktops) */
+  @media only screen and (min-width: 1200px) {
+    /* максимальная ширина экрана */
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+
+button {
+    padding: 0.5rem;
+    transition: 0.5s all;
+}
+
+button:hover {
+    background-color: rgba(255, 0, 0, 0.628);
+}
+
+button { 
+    background-color: #4E87F5; /* цвет кнопки */
+    border: none; /* убираем границы кнопки */
+    color: white; /* цвет текста кнопки */
+    padding: 10px 20px; /* отступы кнопки */
+    text-align: center; /* текст по центру кнопки */
+    text-decoration: none; /* убираем подчеркивание текста */
+    display: inline-block; /* строчно-блочное отображение кнопки */
+    font-size: 17px; /* размер шрифта текста кнопки */
+    margin: 4px 2px; /* внешний отступ кнопки */
+    cursor: pointer; /* курсор при наведении на кнопку */
+    border-radius: 4px; /* углы кнопки */
+  }
+
+  button:hover {
+    background-color: #71A7F5; /* цвет кнопки при наведении */
+  }
+  
+  input[type="number"] {
+    padding: 8px; /* отступы поля ввода */
+    border: none; /* убираем границу поля ввода */
+    border-radius: 4px; /* углы поля ввода */
+    box-shadow: 0 0 0 2px #5c7cdd; /* тень вокруг поля ввода */
+    margin: 4px; /* внешний отступ поля ввода */
+  }

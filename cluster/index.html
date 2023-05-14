@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Кластеризация</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul class="navlist">
+        <li>
+          <a href="../astar/index.html">Astar</a>
+        </li>
+        <li>
+          <a href="../aunt/index.html">Муравьиный алгоритм</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 style="margin: 1rem 0rem 2rem 0rem;">Кластеризация</h3>
+    <p style="margin: 0rem 0rem 3rem 0rem">Нажмите на плоскость, чтобы добавить точку</p>
+    <div class="main">
+      <svg id="plot" style="border: 3px solid #000000;"></svg>
+      <style>
+      </style>
+      <div class="menu">
+        <h2>Выберите алгоритм:</h3>
+        <div class="settings">
+          <div id="kmeans" class="method" style="padding: 1rem 0rem 0rem 0rem">
+            <h3>KMeans</h3>
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Введите количество кластеров:</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="KMeansNInput" min="1" max="5" value="2">
+            <button style="margin: 1rem 0rem 0rem 0rem" onclick="kMeansClusterize()">Реализовать</button>
+          </div>
+          <div id="dbscan" class="method" style="padding: 1rem 0rem 0rem 0rem">
+            <h3>DBSCAN</h3>
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Введите радиус окрестности:</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="dbscanEpsInput" min="1" value="50">
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Введите минимальный порог:</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="dbscanMinPtsInput" min="1" value="5">
+            <button style="margin: 1rem 0rem 0rem 0rem" onclick="dbscanClusterize()">Реализовать</button>
+          </div>
+          <div id="hierarchical" class="method" style="padding: 1rem 0rem 0rem 0rem">
+            <h3>Hierarchical</h3>
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Введите количество кластеров:</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="hierarchicalNInput" min="1" max="5" value="2">
+            <button style="margin: 1rem 0rem 0rem 0rem" onclick="hierarchicalClusterize()">Реализовать</button>
+          </div>
+        </div>
+        <button onclick="stopPage()" style="background-color: orangered;">Сначала</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script language="javascript" type="text/javascript" src="script.js"></script>
+ 
+</html>

@@ -1,0 +1,50 @@
+nav {
+    background-color: #4e86f58c;
+}
+nav > .container > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 24px 0px 24px 0px;
+    list-style: none;
+    justify-content: start;
+}
+nav > .container > ul > li > a {
+    font-weight: bold;
+    color: black;
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 576px) {
+    /* максимальная ширина экрана */
+    nav > .container > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 24px 0px 24px 0px;
+        list-style: none;
+        justify-content: start;
+    }
+    
+    .navlist {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 768px) {
+    /* максимальная ширина экрана */
+    nav > .container > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 24px;
+        list-style: none;
+        justify-content: start;
+    }
+    
+    .navlist {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+}
+

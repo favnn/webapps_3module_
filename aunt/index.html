@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Муравьиный алгоритм</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../main.css">
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <ul class="navlist">
+          <li>
+            <a href="../astar/index.html">Astar</a>
+          </li>
+          <li>
+            <a href="../cluster/index.html">Кластеризация</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 style="margin: 3rem 0rem 1rem 0rem">Муравьиный алгоритм</h1>
+      <p style="padding: 1rem 0rem 1rem 0rem">Нажмите на плоскость, чтобы добавить точку</p>
+      <div class="inner-content">
+        <div class="content-w-settings" style="margin: 1rem 0rem 1rem 0rem">
+          <svg id="plot"></svg>
+          <div class="settings">
+            <h3>Настройки</h3>
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Количество муравьев:</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="numAntsInput" value="5">
+
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Скорость испарения феромона:</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="evaporationRateInput" value="0.1">
+
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Константа Q для расчета следа феромона:</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="QInput" value="1">
+
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Параметр для влияния на феромон (alpha):</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="alphaInput" value="1">
+
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Параметр для влияния на расстояние (beta):</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="betaInput" value="5">
+
+            <h4 style="padding: 1rem 0rem 0rem 0rem">Максимальное количество итераций:</h4>
+            <input style="margin: 1rem 0rem 0rem 0rem" type="number" id="maxIterationsInput" value="100">
+          </div>
+        </div>
+        <div class="menu-panel">
+          <button onclick="antAlgorithm()">Запустить алгоритм</button>
+          <button onclick="stopPage()">Сначала</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script language="javascript" type="text/javascript" src="script.js"></script>
+
+</html>
